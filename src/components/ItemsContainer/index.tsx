@@ -26,7 +26,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-function NameBadge({abbr}:{abbr: string}) {
+function NameBadge({ abbr }: { abbr: string }) {
   return (
     <div className={styles.name_badge}>
       <p>{abbr}</p>
@@ -34,15 +34,18 @@ function NameBadge({abbr}:{abbr: string}) {
   );
 }
 
-function getAbbr(name: string){
-  let fName = name.split(' ')[0]
-  let lName = name.split(' ')[1]
-  return fName.substring(0, 1) + lName.substring(0, 1)
+function getAbbr(name: string) {
+  let fName = name.split(" ")[0];
+  let lName = name.split(" ")[1];
+  return fName.substring(0, 1) + lName.substring(0, 1);
 }
 
 function ItemCard({ product }: { product: ProductI }) {
   return (
-    <Card sx={{ width: "auto", padding: "15px", borderRadius: '10px' }} variant="outlined">
+    <Card
+      sx={{ width: "auto", padding: "15px", borderRadius: "10px" }}
+      variant="outlined"
+    >
       <CardMedia
         component="img"
         height="132"
@@ -79,14 +82,20 @@ function ItemCard({ product }: { product: ProductI }) {
 export default function ItemsContainer() {
   const {
     data: allProducts,
-    refetch,
     isLoading,
-    isError,
     isFetching,
   } = useGetAllProductsQuery("productsApi");
   console.log(allProducts);
   return (
-    <Card sx={{ width: "auto", padding: "25px", marginTop: "50px", borderRadius: '10px' }} variant="outlined">
+    <Card
+      sx={{
+        width: "auto",
+        padding: "25px",
+        marginTop: "50px",
+        borderRadius: "10px",
+      }}
+      variant="outlined"
+    >
       <Box sx={{ flexGrow: 1 }}>
         <div
           style={{

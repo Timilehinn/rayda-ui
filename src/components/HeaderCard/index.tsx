@@ -5,20 +5,9 @@ import styles from "./styles.module.css";
 import { IconButton } from "../Button";
 import ThumbUpOffAltIcon from "@mui/icons-material/ThumbUpOffAlt";
 
-const Bull = () => {
-  return (
-    <Box
-      component="span"
-      style={{ color: "#F79009", height: "6px", width: "6px" }}
-    />
-  );
-};
-
 const Badge = ({ text, type }: { text: string; type: string }) => {
   return (
-    <div
-      style={{ display: "flex", alignItems: "center" }}
-    >
+    <div style={{ display: "flex", alignItems: "center" }}>
       <span className={styles.badge}>
         <span />
         <p>{text}</p>
