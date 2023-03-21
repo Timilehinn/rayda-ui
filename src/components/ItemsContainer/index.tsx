@@ -42,7 +42,7 @@ function getAbbr(name: string){
 
 function ItemCard({ product }: { product: ProductI }) {
   return (
-    <Card sx={{ width: "auto", padding: "15px" }}>
+    <Card sx={{ width: "auto", padding: "15px", borderRadius: '10px' }} variant="outlined">
       <CardMedia
         component="img"
         height="132"
@@ -86,7 +86,7 @@ export default function ItemsContainer() {
   } = useGetAllProductsQuery("productsApi");
   console.log(allProducts);
   return (
-    <Card sx={{ width: "auto", padding: "25px", marginTop: "50px" }}>
+    <Card sx={{ width: "auto", padding: "25px", marginTop: "50px", borderRadius: '10px' }} variant="outlined">
       <Box sx={{ flexGrow: 1 }}>
         <div
           style={{
