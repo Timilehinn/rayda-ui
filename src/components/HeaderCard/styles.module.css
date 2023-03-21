@@ -107,7 +107,8 @@
 /* Media Query for Tablets Ipads portrait mode */ 
 @media (min-width: 735px) and (max-width: 1024px){ 
   .auction_time {
-    font-size: 20px;
+    font-size: 17px;
+    text-align: center;
   }
 
 } 

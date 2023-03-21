@@ -1,4 +1,4 @@
-import Box from "@mui/material/Box";
+import { useState } from 'react'
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import styles from "./styles.module.css";
@@ -18,6 +18,30 @@ const Badge = ({ text, type }: { text: string; type: string }) => {
 };
 
 export default function HeaderCard() {
+
+  const [ days, setDays ] = useState(0)
+  const [ hours, setHours ] = useState(0)
+  const [ mins, setMins ] = useState(0)
+  const [ seconds, setSeconds ] = useState(0)
+
+const countdownDate = new Date("2023-03-29T00:00:00Z").getTime();
+
+const countdownTimer = setInterval(function() {
+
+  const now = new Date().getTime();
+
+  const remainingTime = countdownDate - now;
+
+  setDays(Math.floor(remainingTime / (1000 * 60 * 60 * 24)));
+  setHours(Math.floor(remainingTime / (1000 * 60 * 60) % 24));
+  setMins(Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60)))
+  setSeconds(Math.floor((remainingTime % (1000 * 60)) / 1000))
+
+  if (remainingTime < 0) {
+    clearInterval(countdownTimer);
+  }
+}, 1000);
+
   return (
     <Card className={styles.card_container}>
       <CardMedia
@@ -31,7 +55,7 @@ export default function HeaderCard() {
         <div className={styles.card_content__col}>
           <div className={styles.card_content__col1}>
             <p className={styles.auction_time}>
-              Starts in: 3 days : 2 hours : 24 minutes{" "}
+              Starts in: {days} days : {hours} hours : {mins} minutes : {seconds}s
             </p>
             <Badge text="Not Live" type="Layers Auction" />
           </div>
