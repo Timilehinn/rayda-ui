@@ -26,12 +26,18 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-function NameBadge() {
+function NameBadge({abbr}:{abbr: string}) {
   return (
     <div className={styles.name_badge}>
-      <p>TO</p>
+      <p>{abbr}</p>
     </div>
   );
+}
+
+function getAbbr(name: string){
+  let fName = name.split(' ')[0]
+  let lName = name.split(' ')[1]
+  return fName.substring(0, 1) + lName.substring(0, 1)
 }
 
 function ItemCard({ product }: { product: ProductI }) {
@@ -45,7 +51,7 @@ function ItemCard({ product }: { product: ProductI }) {
         style={{ borderRadius: "15px" }}
       />
       <div style={{ display: "flex", alignItems: "center", marginTop: "10px" }}>
-        <NameBadge />
+        <NameBadge abbr={getAbbr(product.name)} />
         <p className={styles.bidder_name}>
           {product.name}{" "}
           <span style={{ fontWeight: "400" }}>(Highest Bidder)</span>
