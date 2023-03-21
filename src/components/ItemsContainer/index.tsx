@@ -57,7 +57,7 @@ function ItemCard({ product }: { product: ProductI }) {
         <NameBadge abbr={getAbbr(product.name)} />
         <p className={styles.bidder_name}>
           {product.name}{" "}
-          <span style={{ fontWeight: "400" }}>(Highest Bidder)</span>
+          <span style={{ fontWeight: "400", color: Colors.grat400 }}>(Highest Bidder)</span>
         </p>
       </div>
       <p className={styles.desc}>{product.title}</p>
