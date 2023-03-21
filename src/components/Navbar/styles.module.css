@@ -1,0 +1,47 @@
+.nav {
+  background-color: white;
+  width: auto;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey
+}
+.text1 {
+  font-weight: 600;
+  font-size: 30px;
+  color: #101828;
+  margin: 0;
+}
+.text2 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #475467;
+  margin-top: 5px;
+
+}
+
+.icon_badge {
+  width: 24px;
+  height: 22px;
+  background-color: #F04438;
+  border-radius:50%;
+  margin-left: -15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon_badge p{
+  color: white;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+@media (min-width: 0px) and (max-width: 734px) { 
+  .nav {
+  }
+}

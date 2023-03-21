@@ -1,0 +1,127 @@
+.card_container {
+  width: auto;
+  padding: 25px;
+  margin-top: 50px
+}
+
+.card_media {
+  border-radius: 15px;
+  height: 200px
+}
+
+.card_logo {
+  height: 160px;
+  width: 160px;
+}
+
+.card_content {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: -50px;
+  background-color: white;
+  height: 164px;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+}
+
+.card_content__col {
+  display: flex; 
+  margin-bottom: 25px;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between 
+}
+
+.badge {
+  height: 28px;
+  width: 80px;
+  border-radius: 16px;
+  padding: 0px 12px 4px 10px;
+  background-color: #FFFAEB;
+  display: flex;
+  align-items: center; 
+  justify-content: space-around; 
+}
+.badge span{
+  background-color: #F79009;
+  height: 6px; 
+  width: 6px;
+  border-radius: 50%
+}
+.badge p{
+  margin: 0px;
+  color: #B54708;
+  font-weight: 500;
+}
+
+.auction_type {
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.auction_time {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0;
+}
+
+
+
+
+@media (min-width: 0px) and (max-width: 734px) { 
+  .card_container {
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .card_content {
+    padding-left: 0px;
+    padding-right: 0px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card_media {
+    border-radius: 10px;
+    height: 160px;
+  }
+  .card_logo {
+    height: 120px;
+    width: 120px;
+  }
+  .auction_time {
+    font-size: 16px;
+  }
+  .card_content__col {
+    flex-direction: column;
+  }
+  .card_content__col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+} 
+
+/* Media Query for Tablets Ipads portrait mode */ 
+@media (min-width: 735px) and (max-width: 1024px){ 
+  .auction_time {
+    font-size: 20px;
+  }
+
+} 
+
+/* Media Query for Laptops and Desktops */ 
+@media (min-width: 1025px) and (max-width: 1280px){ 
+  
+}
+
+/* Media Query for Large screens */ 
+@media (min-width: 1281px) { 
+ 
+} 
+
+@media only screen and(max-width: 700px) { 
+
+} 

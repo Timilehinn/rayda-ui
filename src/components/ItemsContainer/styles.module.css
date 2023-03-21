@@ -1,0 +1,47 @@
+.name_badge {
+  width: 32px;
+  height: 32px;
+  background-color: #F2F4F7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.name_badge p{
+  font-weight: 500;
+  font-size: 12px;
+  color: #475467;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #101828;
+}
+
+.bidder_name {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #344054;
+}
+
+.desc {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  align-items: center;
+  color: #101828;
+}
+
+
+.price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  align-items: center;
+  color: #101828;
+}
+
+
