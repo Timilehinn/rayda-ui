@@ -1,14 +1,6 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
 import styles from './styles.module.css'
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
-import { Colors } from '../../constants/colors';
-// import MenuIcon from '@mui/icons-material/Menu';
 
 function BadgeIcon({ count }:{ count: number }){
   return (

@@ -1,9 +1,6 @@
 import React, { ButtonHTMLAttributes, StyleHTMLAttributes } from 'react';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
-import DeleteIcon from '@mui/icons-material/Delete';
-import { OverridableComponent } from '@mui/material/OverridableComponent';
-import { SvgIconTypeMap } from '@mui/material';
 import { Colors } from '../constants/colors';
 
 interface ButtonI {
