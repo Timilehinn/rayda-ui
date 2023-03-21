@@ -66,7 +66,7 @@ function ItemCard({ product }: { product: ProductI }) {
       </p>
       <Divider style={{ marginTop: "10px", marginBottom: "10px" }} />
       <TextButton
-        label="Add to whitelist"
+        label="Add to wishlist"
         textStyle={{ color: "white" }}
         style={{
           width: "100%",
