@@ -24,7 +24,7 @@ export default function HeaderCard() {
   const [ mins, setMins ] = useState(0)
   const [ seconds, setSeconds ] = useState(0)
 
-const countdownDate = new Date("2023-03-29T00:00:00Z").getTime();
+const countdownDate = new Date("2023-04-08T00:00:00Z").getTime();
 
 const countdownTimer = setInterval(function() {
 
